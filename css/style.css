@@ -170,6 +170,7 @@ nav a:focus {
 }
 
 .menuMobileLinks {
+
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -181,15 +182,21 @@ nav a:focus {
     /*menuMobile is for the JS, so this effectively disables the JS from functioning*/
     .headerMobile button {
         display: none;
+        
+        
+
+
     }
 
     .menuMobile {
         display: none;
+
     }
 
     /*Flex display for larger screens*/
     .menu {
         display: block;
+ 
     }
 
     .menuLinks{
@@ -201,6 +208,18 @@ nav a:focus {
         padding-right: 2rem;
     }
 
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    column-gap: 1.5rem;
+    padding: 1rem;
+}
+
+.icons img{
+    width: 30px;
+    height: auto;
 }
 
 
