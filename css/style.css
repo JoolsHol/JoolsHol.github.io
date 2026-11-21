@@ -63,6 +63,14 @@ p {
     line-height: 2rem;
 }
 
+h2 {
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.25rem;
+}
+
 /*****************************************/
 /*Navigation links*/
 /*****************************************/
@@ -107,7 +115,9 @@ nav a:focus {
     padding: 0.5rem;
 }
 
-
+.header h2{
+    font-size: 1.5rem;
+}
 
 .headerMobile {
 
@@ -156,6 +166,7 @@ nav a:focus {
 }
 
 @container (width<=450px) {
+
     /*Display is changed when menu button is selected*/
     .menuMobile {
         display: none;
@@ -178,12 +189,13 @@ nav a:focus {
 }
 
 @container (width>450px) {
+
     /*Turn off remove button and menuMobile for larger screens*/
     /*menuMobile is for the JS, so this effectively disables the JS from functioning*/
     .headerMobile button {
         display: none;
-        
-        
+
+
 
 
     }
@@ -196,10 +208,10 @@ nav a:focus {
     /*Flex display for larger screens*/
     .menu {
         display: block;
- 
+
     }
 
-    .menuLinks{
+    .menuLinks {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -210,14 +222,14 @@ nav a:focus {
 
 }
 
-.icons{
+.icons {
     display: flex;
     flex-direction: row;
     column-gap: 1.5rem;
     padding: 1rem;
 }
 
-.icons img{
+.icons img {
     width: 30px;
     height: auto;
 }
@@ -254,7 +266,7 @@ nav a:focus {
     align-items: center;
 }
 
-@container (width <= 450px) {
+@container (width <=450px) {
     .title-header {
         grid-template-columns: 1fr 1.5fr;
         font-size: calc(10px + 1vw);
